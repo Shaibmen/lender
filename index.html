@@ -3,24 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Курс по интернет-маркетингу</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Финансовая Грамотность</title>
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     body {
-      font-family: 'Inter', sans-serif;
-      background-color: #f9f9f9;
+      background-color: #f5f7fa;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background: linear-gradient(to right, #4f46e5, #6366f1);
-      color: #fff;
-      text-align: center;
+      background: linear-gradient(135deg, #00bfa6, #007f73);
+      color: white;
       padding: 60px 20px;
+      text-align: center;
     }
     header h1 {
       font-size: 2.5em;
@@ -28,118 +28,122 @@
     }
     header p {
       font-size: 1.2em;
-      margin-bottom: 20px;
-    }
-    .cta-button {
-      background: #facc15;
-      color: #000;
-      font-weight: bold;
-      border: none;
-      padding: 15px 30px;
-      border-radius: 8px;
-      font-size: 1em;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    .cta-button:hover {
-      background: #eab308;
     }
     section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
     }
-    .features, .testimonials, .guarantees {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
-    }
-    .block {
-      background: #fff;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    .features, .testimonials, .cta, .form-section {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+      padding: 30px;
     }
     h2 {
-      font-size: 2em;
+      color: #007f73;
       margin-bottom: 20px;
-      text-align: center;
+      font-size: 1.8em;
     }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      margin-top: 30px;
+    ul {
+      list-style: none;
     }
-    input {
-      padding: 12px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
+    ul li::before {
+      content: "✔";
+      color: #00bfa6;
+      margin-right: 10px;
+    }
+    .testimonials p {
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+    .cta-button {
+      background-color: #00bfa6;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 30px;
       font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .cta-button:hover {
+      background-color: #007f73;
+    }
+    form input[type="email"] {
+      padding: 10px;
+      width: 70%;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-right: 10px;
+    }
+    form button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #007f73;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
     }
     footer {
       text-align: center;
-      padding: 40px 20px;
+      padding: 20px;
       font-size: 0.9em;
-      color: #666;
-    }
-    @media (max-width: 768px) {
-      .features, .testimonials, .guarantees {
-        grid-template-columns: 1fr;
-      }
+      background-color: #e0efeb;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Начните зарабатывать на интернет-маркетинге уже через месяц!</h1>
-    <p>Практический курс с обратной связью от экспертов. Без воды и сложных терминов.</p>
-    <button class="cta-button" onclick="scrollToForm()">Записаться на курс со скидкой 30%</button>
+    <h1>Финансовая свобода начинается с понимания</h1>
+    <p>Пройдите онлайн-курс и начните уверенно распоряжаться своими деньгами</p>
   </header>
 
-  <section>
-    <h2>Что вы получите</h2>
-    <div class="features">
-      <div class="block">🔹 Пошаговые видеоуроки — от основ до запуска рекламы</div>
-      <div class="block">🔹 Поддержка 24/7 — задавайте вопросы, получайте помощь</div>
-      <div class="block">🔹 Сертификат — подтверждение ваших навыков</div>
-      <div class="block">🔹 Настоящие кейсы и практические задания</div>
-    </div>
+  <section class="features">
+    <h2>Что вы получите:</h2>
+    <ul>
+      <li>Курс для начинающих — никаких сложных терминов</li>
+      <li>Всего 15 минут в день: видеоуроки и задания</li>
+      <li>Поддержка куратора и чат участников</li>
+      <li>Готовые шаблоны и таблицы</li>
+      <li>Доступ к материалам навсегда</li>
+    </ul>
   </section>
 
-  <section>
-    <h2>Отзывы наших учеников</h2>
-    <div class="testimonials">
-      <div class="block">💬 "За месяц обучения я увеличил продажи в Instagram на 73%!" — Ирина</div>
-      <div class="block">💬 "С нуля научился делать рекламу в Meta. Курс — 🔥" — Артём</div>
-    </div>
+  <section class="testimonials">
+    <h2>Отзывы участников:</h2>
+    <p>"После курса я наконец-то поняла, куда утекают деньги, и начала откладывать."</p>
+    <p>"Очень структурно, понятно и без воды. Супер для тех, кто с нуля."</p>
+    <p>"Информация, которую должен знать каждый. Спасибо за мотивацию!"</p>
   </section>
 
-  <section>
-    <h2>Форма записи</h2>
-    <form id="signup">
-      <input type="text" placeholder="Ваше имя" required>
-      <input type="email" placeholder="Ваш email" required>
-      <button type="submit" class="cta-button">Получить доступ</button>
+  <section class="cta" style="text-align:center">
+    <h2>Бонус: финансовый план на год!</h2>
+    <p style="margin-bottom:20px;">Начните курс сегодня и получите бонус</p>
+    <button class="cta-button" onclick="scrollToForm()">Получить доступ</button>
+  </section>
+
+  <section class="form-section" id="signup">
+    <h2>Регистрация</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="email" placeholder="Введите ваш email" required>
+      <button type="submit">Присоединиться</button>
     </form>
   </section>
 
-  <section>
-    <h2>Гарантии и доверие</h2>
-    <div class="guarantees">
-      <div class="block">🛡️ Гарантия возврата денег — 7 дней</div>
-      <div class="block">🎓 Сертификат об окончании курса</div>
-      <div class="block">🤝 Партнёры: Skillbox, Google Partner</div>
-    </div>
-  </section>
-
   <footer>
-    © 2025 Курс по интернет-маркетингу. Все права защищены. | Политика конфиденциальности
+    © 2025 Финансовый Курс. Все права защищены.
   </footer>
 
   <script>
     function scrollToForm() {
-      document.getElementById("signup").scrollIntoView({ behavior: 'smooth' });
+      document.getElementById('signup').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function submitForm(e) {
+      e.preventDefault();
+      alert('Спасибо за регистрацию! Мы отправим вам письмо с доступом.');
     }
   </script>
 </body>
